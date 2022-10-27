@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI</title>
+    <style>
+       *{
+           margin: 0;
+           padding: 0;
+           
+       }
+        body{
+           background: lightyellow;
+            background-size:cover;
+          
+            
+        }
+        .abc{ 
+            
+         background-repeat:no-repeat;
+            
+            color: black;
+           text-align: left;
+        }
+        .abc ul{
+            display: inline-flex;
+            list-style: none;
+            color:#fff;
+        }
+        .abc ul li{
+            width:120px;
+            margin:20px;
+            padding: 3px;
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+        .abc ul li a{
+            color:black;
+            text-decoration:dashed;
+        }
+        .menu{
+            display: none;
+        }
+        .abc ul li:hover .menu {
+            display:block;
+            text-align: left; 
+            position: absolute;
+            border-radius: 10px;
+            background: lightgreen;
+            margin-top: 15px;
+            margin-left: -15px;
+        }
+        
+        .abc ul li:hover .menu ul {
+            display: block;
+            margin: 5px;
+        }
+        .abc ul li:hover .menu ul.abc ul li:hover .menu ul li{
+            width:150px;
+            padding:10px;
+            border-radius: 10px;
+            background: transparent;
+            text-align: right;
+        }
+        .isha{
+            background: url(download.jpg);
+            background-size: cover;
+            margin-left: 5px;
+        }
+        .box{
+            height: 100px;
+            border: 2px solid green;
+            background-color: aqua;
+            border-radius: 10px;
+            margin-left: 10px;
+             text-align: center;
+           
+           }
+           .qwe,.qwe1,.qwe2 {
+             float:right;
+              margin-right: 50px;
+              padding: 5px;
+           }
+           
+           .qwe,.qwe1,.qwe2 :hover{
+               transform: scale(1.5);
+           }
+           
+    </style>
+    </head>
+<body>
+   <div class="qwe">
+  <a href="https://instagram.com/"> <img src="insta.jpg"></a>
+  </div>
+  <div class="qwe1">
+  <a href="https://twitter.com/"><img src="twitter.png"></a>
+  </div>
+  <div class="qwe2">
+    <a href="https://facebook.com/"><img src="fb.png"></a>
+    </div>
+    <div class="qwe">
+    <input type="button"  value="Logout" onclick="check()">
+    </div>
+
+   
+    <div class="abc">
+         <img src="down.png">
+        
+        <ul>
+           
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Education</a>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#" >Founder's Message</a></li>
+                            <li><a href="#" >Junior School</a></li>
+                            <li><a href="#" >Middle School</a></li >
+                            <li><a href="#" >Senior School</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Services</a>
+                    <div class="menu">
+                    <ul>
+                        <li><a href="#" >Overview</a></li>
+                        <li><a href="#" >Student's Houses</a></li>
+                        <li><a href="#" >Library</a></li >
+                        <li><a href="#" >Sportd</a></li>
+                    </ul>
+                </div></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#"> Programms</a>
+                    <div class="menu">
+                        <ul>
+                            <li>Talenst Exploration</li>
+                            <li>Periscope</li>
+                            <li>Internship</li>
+                           
+                        </ul>
+                       
+                    </div>
+                </li>
+               
+        </ul>  
+        
+        </div>
+       
+    </div>
+
+         <div class="isha">
+            <img src="download.jpg"></div>
+            
+        <div class="box">About Us
+           
+        </div>
+        <div class="box">Contact </div>
+        <div class="box">Directions</div>
+        <div class="box">Feedback</div>
+        <script>
+            function check(){
+                alert("You are Logging out");
+                window.location.href="user.html";
+            }
+        </script>
+
+
+</body>
+</html>

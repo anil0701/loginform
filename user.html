@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link href="task.css" rel="stylesheet">
+    <link href="2.jpg" rel="icon">
+</head>                                                                                         
+<body>
+    <div class="accesspage">
+        <div class="accessbox">
+            <h2 class="User-Heading">User Accesss</h2>
+            <div class="form-box">
+                <label class="title-lbl">UserName</label>
+                <input  class ="input-box" type="text" style="color: rgb(28, 4, 4);" placeholder="Enter User Name" id="username" autofocus/>
+                <input type="button" class="click-btn" value="User Check" onclick="validate()">
+                <a class="forgot-link" href="forgot.html" target="_blanks">Forgot Password?</a>
+               
+            </div>
+        </div>
+    </div>
+<script>
+    function validate(){
+        var a=document.getElementById('username').value;
+        if(a==null||a==""){
+            alert("username can't be null");
+        }
+        if(a=="admin"){
+            confirm("iam loading");
+            window.location.href="pwd.html"
+        }
+        else{
+           confirm("Enter correct username")
+        }
+       
+    }
+    
+</script>
+</body>
+</html>

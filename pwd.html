@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <link href="task.css" rel="stylesheet">
+</head>
+<body>
+    <div class="accesspage">
+        <div class="accessbox">
+            <h2 class="User-Heading">Password</h2>
+            <div class="form-box">
+                <label class="title-lbl">Enter Password</label>
+                <input  class ="input-box" type="password" placeholder="Fill Password" id="password">
+                <input type="button" class="click-btn" value="Login" onclick="vad()">
+                <a class="forgot-link" href="forgot.html" target="_blanks">Forgot Password?</a>
+               
+            </div>
+        </div>
+    </div>
+    <script>
+        function vad(){
+            var c=document.getElementById("password").value;
+            if(c==null||c==""){
+                alert("password can't be empty");
+            }
+            if(c=="User@123"){
+                alert("iam loading");
+                window.location.href="data.html"
+            }
+            else{
+                alert("password doesn't matching");
+            }
+        }
+    </script>
+</body>
+</html>

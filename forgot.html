@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link href="task.css" rel="stylesheet">
+</head>
+<body>
+    <div class="accesspage">
+        <div class="accessbox">
+            <h2 class="User-Heading">Reset Password </h2>
+            <div class="form-box">
+                <label class="title-lbl">New password</label>
+                <input  class ="input-box" type="text" placeholder="Enter New Password " id="forgot">
+                
+               
+                <input type="button" class="click-btn" value="confirm password" onclick="valid()">
+               
+               
+            </div>
+        </div>
+    </div>
+    <script>
+        function valid(){
+            var b=document.getElementById("forgot").value;
+            if(b==null||b==""){
+                alert("password can't be null")
+            }
+            if(b.length<5)
+            {
+                alert("password is to short");
+            }
+            else{
+                alert("passowrd changed successfully");
+                window.location.href="user.html"
+            }
+        }
+    </script>
+
+</body>
+</html>
